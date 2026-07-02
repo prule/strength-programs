@@ -1,0 +1,23 @@
+{
+  "name": "Bodyweight Basics",
+  "tag": "Bodyweight · No equipment",
+  "workouts": [
+    {
+      "name": "Push Day",
+      "exercises": [
+        { "exerciseId": "pushup", "name": "Push-ups", "sets": 3, "targetReps": 12, "bodyweight": true },
+        { "exerciseId": "dip", "name": "Dips", "sets": 3, "targetReps": 10, "bodyweight": true },
+        { "exerciseId": "pike-pushup", "name": "Pike Push-ups", "sets": 3, "targetReps": 8, "bodyweight": true }
+      ]
+    },
+    {
+      "name": "Pull Day",
+      "exercises": [
+        { "exerciseId": "pullup", "name": "Pull-ups", "sets": 3, "targetReps": 8, "bodyweight": true },
+        { "exerciseId": "inverted-row", "name": "Inverted Rows", "sets": 3, "targetReps": 10, "bodyweight": true },
+        { "exerciseId": "chinup", "name": "Chin-ups", "sets": 3, "targetReps": 6, "bodyweight": true }
+      ]
+    }
+  ],
+  "rotation": ["Push Day", "Pull Day"]
+}

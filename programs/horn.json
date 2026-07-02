@@ -1,0 +1,23 @@
+{
+  "name": "Horn Strength",
+  "tag": "Barbell · 5×5",
+  "workouts": [
+    {
+      "name": "Workout A",
+      "exercises": [
+        { "exerciseId": "squat", "name": "Squat", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 225 },
+        { "exerciseId": "bench", "name": "Bench Press", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 155 },
+        { "exerciseId": "row", "name": "Barbell Row", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 135 }
+      ]
+    },
+    {
+      "name": "Workout B",
+      "exercises": [
+        { "exerciseId": "squat", "name": "Squat", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 225 },
+        { "exerciseId": "press", "name": "Overhead Press", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 95 },
+        { "exerciseId": "deadlift", "name": "Deadlift", "sets": 1, "targetReps": 5, "increment": 10, "startWeight": 275 }
+      ]
+    }
+  ],
+  "rotation": ["Workout A", "Workout B"]
+}

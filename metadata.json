@@ -1,3 +1,33 @@
 {
-
+  "version": 1,
+  "programs": [
+    {
+      "id": "ss",
+      "name": "Starting Strength",
+      "tag": "Barbell · Novice LP",
+      "file": "programs/ss.json",
+      "version": "1.0.0"
+    },
+    {
+      "id": "horn",
+      "name": "Horn Strength",
+      "tag": "Barbell · 5×5",
+      "file": "programs/horn.json",
+      "version": "1.0.0"
+    },
+    {
+      "id": "texas",
+      "name": "Texas Method",
+      "tag": "Barbell · Intermediate",
+      "file": "programs/texas.json",
+      "version": "1.0.0"
+    },
+    {
+      "id": "bw",
+      "name": "Bodyweight Basics",
+      "tag": "Bodyweight · No equipment",
+      "file": "programs/bw.json",
+      "version": "1.0.0"
+    }
+  ]
 }

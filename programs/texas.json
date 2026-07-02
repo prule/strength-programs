@@ -1,0 +1,23 @@
+{
+  "name": "Texas Method",
+  "tag": "Barbell · Intermediate",
+  "workouts": [
+    {
+      "name": "Volume Day",
+      "exercises": [
+        { "exerciseId": "squat", "name": "Squat", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 275 },
+        { "exerciseId": "bench", "name": "Bench Press", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 185 },
+        { "exerciseId": "row", "name": "Barbell Row", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 155 }
+      ]
+    },
+    {
+      "name": "Intensity Day",
+      "exercises": [
+        { "exerciseId": "squat", "name": "Squat", "sets": 1, "targetReps": 5, "increment": 5, "startWeight": 315 },
+        { "exerciseId": "press", "name": "Overhead Press", "sets": 1, "targetReps": 5, "increment": 5, "startWeight": 135 },
+        { "exerciseId": "deadlift", "name": "Deadlift", "sets": 1, "targetReps": 5, "increment": 10, "startWeight": 365 }
+      ]
+    }
+  ],
+  "rotation": ["Volume Day", "Intensity Day"]
+}

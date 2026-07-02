@@ -15,7 +15,7 @@
       "exercises": [
         { "exerciseId": "squat", "name": "Squat", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 245 },
         { "exerciseId": "press", "name": "Overhead Press", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 105 },
-        { "exerciseId": "power-clean", "name": "Power Clean", "sets": 5, "targetReps": 3, "increment": 5, "startWeight": 135 }
+        { "exerciseId": "power-clean", "name": "Power Clean", "sets": 3, "targetReps": 3, "increment": 5, "startWeight": 135 }
       ]
     }
   ],

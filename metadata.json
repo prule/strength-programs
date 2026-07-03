@@ -28,6 +28,13 @@
       "tag": "Bodyweight · No equipment",
       "file": "programs/bw.json",
       "version": "1.0.0"
+    },
+    {
+      "id": "bp",
+      "name": "Barbell Prescription",
+      "tag": "Barbell · Masters (40+)",
+      "file": "programs/bp.json",
+      "version": "1.0.0"
     }
   ]
 }

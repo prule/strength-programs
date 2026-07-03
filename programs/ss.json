@@ -1,23 +1,69 @@
 {
   "name": "Starting Strength",
   "tag": "Barbell · Novice LP",
+  "units": "lb",
+  "exercises": [
+    {
+      "exerciseId": "squat",
+      "name": "Squat",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 245
+    },
+    {
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 165
+    },
+    {
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "sets": 1,
+      "targetReps": 5,
+      "increment": 10,
+      "startWeight": 315
+    },
+    {
+      "exerciseId": "press",
+      "name": "Overhead Press",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 105
+    },
+    {
+      "exerciseId": "power-clean",
+      "name": "Power Clean",
+      "sets": 3,
+      "targetReps": 3,
+      "increment": 5,
+      "startWeight": 135
+    }
+  ],
   "workouts": [
     {
       "name": "Workout A",
-      "exercises": [
-        { "exerciseId": "squat", "name": "Squat", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 245 },
-        { "exerciseId": "bench", "name": "Bench Press", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 165 },
-        { "exerciseId": "deadlift", "name": "Deadlift", "sets": 1, "targetReps": 5, "increment": 10, "startWeight": 315 }
+      "exerciseRefs": [
+        "squat",
+        "bench",
+        "deadlift"
       ]
     },
     {
       "name": "Workout B",
-      "exercises": [
-        { "exerciseId": "squat", "name": "Squat", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 245 },
-        { "exerciseId": "press", "name": "Overhead Press", "sets": 3, "targetReps": 5, "increment": 5, "startWeight": 105 },
-        { "exerciseId": "power-clean", "name": "Power Clean", "sets": 3, "targetReps": 3, "increment": 5, "startWeight": 135 }
+      "exerciseRefs": [
+        "squat",
+        "press",
+        "power-clean"
       ]
     }
   ],
-  "rotation": ["Workout A", "Workout B"]
+  "rotation": [
+    "Workout A",
+    "Workout B"
+  ]
 }

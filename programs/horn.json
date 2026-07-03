@@ -1,23 +1,69 @@
 {
   "name": "Horn Strength",
   "tag": "Barbell · 5×5",
+  "units": "lb",
+  "exercises": [
+    {
+      "exerciseId": "squat",
+      "name": "Squat",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 225
+    },
+    {
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 155
+    },
+    {
+      "exerciseId": "row",
+      "name": "Barbell Row",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 135
+    },
+    {
+      "exerciseId": "press",
+      "name": "Overhead Press",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 95
+    },
+    {
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "sets": 1,
+      "targetReps": 5,
+      "increment": 10,
+      "startWeight": 275
+    }
+  ],
   "workouts": [
     {
       "name": "Workout A",
-      "exercises": [
-        { "exerciseId": "squat", "name": "Squat", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 225 },
-        { "exerciseId": "bench", "name": "Bench Press", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 155 },
-        { "exerciseId": "row", "name": "Barbell Row", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 135 }
+      "exerciseRefs": [
+        "squat",
+        "bench",
+        "row"
       ]
     },
     {
       "name": "Workout B",
-      "exercises": [
-        { "exerciseId": "squat", "name": "Squat", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 225 },
-        { "exerciseId": "press", "name": "Overhead Press", "sets": 5, "targetReps": 5, "increment": 5, "startWeight": 95 },
-        { "exerciseId": "deadlift", "name": "Deadlift", "sets": 1, "targetReps": 5, "increment": 10, "startWeight": 275 }
+      "exerciseRefs": [
+        "squat",
+        "press",
+        "deadlift"
       ]
     }
   ],
-  "rotation": ["Workout A", "Workout B"]
+  "rotation": [
+    "Workout A",
+    "Workout B"
+  ]
 }

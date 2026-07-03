@@ -1,64 +1,68 @@
 {
   "name": "Barbell Prescription",
   "tag": "Barbell · Masters (40+)",
+  "units": "lb",
+  "exercises": [
+    {
+      "exerciseId": "squat",
+      "name": "Squat",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 135
+    },
+    {
+      "exerciseId": "press",
+      "name": "Overhead Press",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 2.5,
+      "startWeight": 65
+    },
+    {
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "sets": 1,
+      "targetReps": 5,
+      "increment": 10,
+      "startWeight": 185
+    },
+    {
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": 2.5,
+      "startWeight": 95
+    },
+    {
+      "exerciseId": "chinup",
+      "name": "Chin-ups",
+      "sets": 3,
+      "targetReps": 5,
+      "bodyweight": true
+    }
+  ],
   "workouts": [
     {
       "name": "Workout A",
-      "exercises": [
-        {
-          "exerciseId": "squat",
-          "name": "Squat",
-          "sets": 3,
-          "targetReps": 5,
-          "increment": 5,
-          "startWeight": 135
-        },
-        {
-          "exerciseId": "press",
-          "name": "Overhead Press",
-          "sets": 3,
-          "targetReps": 5,
-          "increment": 2.5,
-          "startWeight": 65
-        },
-        {
-          "exerciseId": "deadlift",
-          "name": "Deadlift",
-          "sets": 1,
-          "targetReps": 5,
-          "increment": 10,
-          "startWeight": 185
-        }
+      "exerciseRefs": [
+        "squat",
+        "press",
+        "deadlift"
       ]
     },
     {
       "name": "Workout B",
-      "exercises": [
-        {
-          "exerciseId": "squat",
-          "name": "Squat",
-          "sets": 3,
-          "targetReps": 5,
-          "increment": 5,
-          "startWeight": 135
-        },
-        {
-          "exerciseId": "bench",
-          "name": "Bench Press",
-          "sets": 3,
-          "targetReps": 5,
-          "increment": 2.5,
-          "startWeight": 95
-        },
-        {
-          "exerciseId": "chinup",
-          "name": "Chin-ups",
-          "sets": 3,
-          "targetReps": 5,
-          "bodyweight": true
-        }
+      "exerciseRefs": [
+        "squat",
+        "bench",
+        "chinup"
       ]
     }
   ],
-  "rotation": ["Workout A", "Workout B"]
+  "rotation": [
+    "Workout A",
+    "Workout B"
+  ]
 }

@@ -1,23 +1,71 @@
 {
   "name": "Bodyweight Basics",
   "tag": "Bodyweight · No equipment",
+  "units": "lb",
+  "exercises": [
+    {
+      "exerciseId": "pushup",
+      "name": "Push-ups",
+      "sets": 3,
+      "targetReps": 12,
+      "bodyweight": true
+    },
+    {
+      "exerciseId": "dip",
+      "name": "Dips",
+      "sets": 3,
+      "targetReps": 10,
+      "bodyweight": true
+    },
+    {
+      "exerciseId": "pike-pushup",
+      "name": "Pike Push-ups",
+      "sets": 3,
+      "targetReps": 8,
+      "bodyweight": true
+    },
+    {
+      "exerciseId": "pullup",
+      "name": "Pull-ups",
+      "sets": 3,
+      "targetReps": 8,
+      "bodyweight": true
+    },
+    {
+      "exerciseId": "inverted-row",
+      "name": "Inverted Rows",
+      "sets": 3,
+      "targetReps": 10,
+      "bodyweight": true
+    },
+    {
+      "exerciseId": "chinup",
+      "name": "Chin-ups",
+      "sets": 3,
+      "targetReps": 6,
+      "bodyweight": true
+    }
+  ],
   "workouts": [
     {
       "name": "Push Day",
-      "exercises": [
-        { "exerciseId": "pushup", "name": "Push-ups", "sets": 3, "targetReps": 12, "bodyweight": true },
-        { "exerciseId": "dip", "name": "Dips", "sets": 3, "targetReps": 10, "bodyweight": true },
-        { "exerciseId": "pike-pushup", "name": "Pike Push-ups", "sets": 3, "targetReps": 8, "bodyweight": true }
+      "exerciseRefs": [
+        "pushup",
+        "dip",
+        "pike-pushup"
       ]
     },
     {
       "name": "Pull Day",
-      "exercises": [
-        { "exerciseId": "pullup", "name": "Pull-ups", "sets": 3, "targetReps": 8, "bodyweight": true },
-        { "exerciseId": "inverted-row", "name": "Inverted Rows", "sets": 3, "targetReps": 10, "bodyweight": true },
-        { "exerciseId": "chinup", "name": "Chin-ups", "sets": 3, "targetReps": 6, "bodyweight": true }
+      "exerciseRefs": [
+        "pullup",
+        "inverted-row",
+        "chinup"
       ]
     }
   ],
-  "rotation": ["Push Day", "Pull Day"]
+  "rotation": [
+    "Push Day",
+    "Pull Day"
+  ]
 }

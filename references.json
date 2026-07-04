@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "references": {
+    "squat": [
+      {
+        "kind": "video",
+        "label": "Learning to Squat — The Starting Strength Method",
+        "url": "https://www.youtube.com/watch?v=nhoikoUEI8U&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+      },
+      {
+        "kind": "video",
+        "label": "Squatting Right on Day 1",
+        "url": "https://www.youtube.com/watch?v=GtKYbl2X9dY&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+      }
+    ],
+    "bench": [
+      {
+        "kind": "video",
+        "label": "Learning to Bench Press — The Starting Strength Method",
+        "url": "https://www.youtube.com/watch?v=rxD321l2svE&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+      }
+    ],
+    "deadlift": [
+      {
+        "kind": "video",
+        "label": "Learning to Deadlift — The Starting Strength Method",
+        "url": "https://www.youtube.com/watch?v=p2OPUi4xGrM&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+      }
+    ],
+    "press": [
+      {
+        "kind": "video",
+        "label": "Learning to Press — The Starting Strength Method",
+        "url": "https://www.youtube.com/watch?v=8dacy5hjaE8&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+      }
+    ]
+  }
+}

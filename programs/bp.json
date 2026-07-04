@@ -9,7 +9,19 @@
       "sets": 3,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 135
+      "startWeight": 135,
+      "references": [
+        {
+          "kind": "video",
+          "label": "Learning to Squat — The Starting Strength Method",
+          "url": "https://www.youtube.com/watch?v=nhoikoUEI8U&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        },
+        {
+          "kind": "video",
+          "label": "Squatting Right on Day 1",
+          "url": "https://www.youtube.com/watch?v=GtKYbl2X9dY&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        }
+      ]
     },
     {
       "exerciseId": "press",
@@ -17,7 +29,14 @@
       "sets": 3,
       "targetReps": 5,
       "increment": 2.5,
-      "startWeight": 65
+      "startWeight": 65,
+      "references": [
+        {
+          "kind": "video",
+          "label": "Learning to Press — The Starting Strength Method",
+          "url": "https://www.youtube.com/watch?v=8dacy5hjaE8&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        }
+      ]
     },
     {
       "exerciseId": "deadlift",
@@ -25,7 +44,14 @@
       "sets": 1,
       "targetReps": 5,
       "increment": 10,
-      "startWeight": 185
+      "startWeight": 185,
+      "references": [
+        {
+          "kind": "video",
+          "label": "Learning to Deadlift — The Starting Strength Method",
+          "url": "https://www.youtube.com/watch?v=p2OPUi4xGrM&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        }
+      ]
     },
     {
       "exerciseId": "bench",
@@ -33,7 +59,14 @@
       "sets": 3,
       "targetReps": 5,
       "increment": 2.5,
-      "startWeight": 95
+      "startWeight": 95,
+      "references": [
+        {
+          "kind": "video",
+          "label": "Learning to Bench Press — The Starting Strength Method",
+          "url": "https://www.youtube.com/watch?v=rxD321l2svE&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        }
+      ]
     },
     {
       "exerciseId": "chinup",

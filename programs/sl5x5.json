@@ -1,0 +1,104 @@
+{
+  "name": "StrongLifts 5x5",
+  "tag": "Barbell · 5×5",
+  "units": "lb",
+  "exercises": [
+    {
+      "exerciseId": "squat",
+      "name": "Squat",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 45,
+      "references": [
+        {
+          "kind": "article",
+          "label": "StrongLifts Squat guide",
+          "url": "https://stronglifts.com/squat/"
+        }
+      ]
+    },
+    {
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 45,
+      "references": [
+        {
+          "kind": "article",
+          "label": "StrongLifts Bench Press guide",
+          "url": "https://stronglifts.com/bench-press/"
+        }
+      ]
+    },
+    {
+      "exerciseId": "barbell-row",
+      "name": "Barbell Row",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 65,
+      "references": [
+        {
+          "kind": "article",
+          "label": "StrongLifts Barbell Row guide",
+          "url": "https://stronglifts.com/barbell-row/"
+        }
+      ]
+    },
+    {
+      "exerciseId": "press",
+      "name": "Overhead Press",
+      "sets": 5,
+      "targetReps": 5,
+      "increment": 5,
+      "startWeight": 45,
+      "references": [
+        {
+          "kind": "article",
+          "label": "StrongLifts Overhead Press guide",
+          "url": "https://stronglifts.com/overhead-press/"
+        }
+      ]
+    },
+    {
+      "exerciseId": "deadlift",
+      "name": "Deadlift",
+      "sets": 1,
+      "targetReps": 5,
+      "increment": 10,
+      "startWeight": 95,
+      "references": [
+        {
+          "kind": "article",
+          "label": "StrongLifts Deadlift guide",
+          "url": "https://stronglifts.com/deadlift/"
+        }
+      ]
+    }
+  ],
+  "workouts": [
+    {
+      "name": "Workout A",
+      "exerciseRefs": [
+        "squat",
+        "bench",
+        "barbell-row"
+      ]
+    },
+    {
+      "name": "Workout B",
+      "exerciseRefs": [
+        "squat",
+        "press",
+        "deadlift"
+      ]
+    }
+  ],
+  "rotation": [
+    "Workout A",
+    "Workout B"
+  ]
+}

@@ -35,6 +35,13 @@
       "tag": "Barbell · Masters (40+)",
       "file": "programs/bp.json",
       "version": "1.0.0"
+    },
+    {
+      "id": "sl5x5",
+      "name": "StrongLifts 5x5",
+      "tag": "Barbell · 5×5",
+      "file": "programs/sl5x5.json",
+      "version": "1.0.0"
     }
   ]
 }

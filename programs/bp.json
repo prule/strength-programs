@@ -1,15 +1,16 @@
 {
   "name": "Barbell Prescription",
   "tag": "Barbell · Masters (40+)",
-  "units": "lb",
   "exercises": [
     {
       "exerciseId": "squat",
       "name": "Squat",
       "sets": 3,
       "targetReps": 5,
-      "increment": 5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      },
       "references": [
         {
           "kind": "video",
@@ -28,8 +29,10 @@
       "name": "Overhead Press",
       "sets": 3,
       "targetReps": 5,
-      "increment": 2.5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 2.5,
+        "kg": 1.25
+      },
       "references": [
         {
           "kind": "video",
@@ -43,8 +46,10 @@
       "name": "Deadlift",
       "sets": 1,
       "targetReps": 5,
-      "increment": 10,
-      "startWeight": 0,
+      "increment": {
+        "lb": 10,
+        "kg": 5
+      },
       "references": [
         {
           "kind": "video",
@@ -58,8 +63,10 @@
       "name": "Bench Press",
       "sets": 3,
       "targetReps": 5,
-      "increment": 2.5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 2.5,
+        "kg": 1.25
+      },
       "references": [
         {
           "kind": "video",
@@ -74,8 +81,10 @@
       "sets": 3,
       "targetReps": 5,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     }
   ],
   "workouts": [

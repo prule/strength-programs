@@ -1,7 +1,6 @@
 {
   "name": "Bodyweight Basics",
   "tag": "Bodyweight · No equipment",
-  "units": "lb",
   "exercises": [
     {
       "exerciseId": "pushup",
@@ -9,8 +8,10 @@
       "sets": 3,
       "targetReps": 12,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     },
     {
       "exerciseId": "dip",
@@ -18,8 +19,10 @@
       "sets": 3,
       "targetReps": 10,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     },
     {
       "exerciseId": "pike-pushup",
@@ -27,8 +30,10 @@
       "sets": 3,
       "targetReps": 8,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     },
     {
       "exerciseId": "pullup",
@@ -36,8 +41,10 @@
       "sets": 3,
       "targetReps": 8,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     },
     {
       "exerciseId": "inverted-row",
@@ -45,8 +52,10 @@
       "sets": 3,
       "targetReps": 10,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     },
     {
       "exerciseId": "chinup",
@@ -54,8 +63,10 @@
       "sets": 3,
       "targetReps": 6,
       "bodyweight": true,
-      "increment": 0,
-      "startWeight": 0
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     }
   ],
   "workouts": [

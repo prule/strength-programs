@@ -1,15 +1,16 @@
 {
   "name": "Horn Strength",
   "tag": "Barbell · 5×5",
-  "units": "lb",
   "exercises": [
     {
       "exerciseId": "squat",
       "name": "Squat",
       "sets": 5,
       "targetReps": 5,
-      "increment": 5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      },
       "references": [
         {
           "kind": "video",
@@ -28,8 +29,10 @@
       "name": "Bench Press",
       "sets": 5,
       "targetReps": 5,
-      "increment": 5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      },
       "references": [
         {
           "kind": "video",
@@ -43,16 +46,20 @@
       "name": "Barbell Row",
       "sets": 5,
       "targetReps": 5,
-      "increment": 5,
-      "startWeight": 0
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
     },
     {
       "exerciseId": "press",
       "name": "Overhead Press",
       "sets": 5,
       "targetReps": 5,
-      "increment": 5,
-      "startWeight": 0,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      },
       "references": [
         {
           "kind": "video",
@@ -66,8 +73,10 @@
       "name": "Deadlift",
       "sets": 1,
       "targetReps": 5,
-      "increment": 10,
-      "startWeight": 0,
+      "increment": {
+        "lb": 10,
+        "kg": 5
+      },
       "references": [
         {
           "kind": "video",

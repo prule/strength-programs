@@ -9,7 +9,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 275,
+      "startWeight": 0,
       "references": [
         {
           "kind": "video",
@@ -29,7 +29,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 185,
+      "startWeight": 0,
       "references": [
         {
           "kind": "video",
@@ -44,7 +44,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 155
+      "startWeight": 0
     },
     {
       "exerciseId": "press",
@@ -52,7 +52,7 @@
       "sets": 1,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 135,
+      "startWeight": 0,
       "references": [
         {
           "kind": "video",
@@ -67,7 +67,7 @@
       "sets": 1,
       "targetReps": 5,
       "increment": 10,
-      "startWeight": 365,
+      "startWeight": 0,
       "references": [
         {
           "kind": "video",

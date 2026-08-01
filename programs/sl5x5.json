@@ -9,7 +9,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 45,
+      "startWeight": 0,
       "references": [
         {
           "kind": "article",
@@ -24,7 +24,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 45,
+      "startWeight": 0,
       "references": [
         {
           "kind": "article",
@@ -39,7 +39,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 65,
+      "startWeight": 0,
       "references": [
         {
           "kind": "article",
@@ -54,7 +54,7 @@
       "sets": 5,
       "targetReps": 5,
       "increment": 5,
-      "startWeight": 45,
+      "startWeight": 0,
       "references": [
         {
           "kind": "article",
@@ -69,7 +69,7 @@
       "sets": 1,
       "targetReps": 5,
       "increment": 10,
-      "startWeight": 95,
+      "startWeight": 0,
       "references": [
         {
           "kind": "article",

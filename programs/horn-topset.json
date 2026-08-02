@@ -1,11 +1,11 @@
 {
-  "name": "Barbell Prescription",
-  "tag": "Barbell · Masters (40+)",
+  "name": "Horn Strength (Top-Set/Back-off)",
+  "tag": "Barbell · Intermediate",
   "exercises": [
     {
       "exerciseId": "squat",
       "name": "Squat",
-      "sets": 3,
+      "sets": 1,
       "targetReps": 5,
       "increment": {
         "lb": 5,
@@ -25,10 +25,30 @@
       ]
     },
     {
-      "exerciseId": "press",
-      "name": "Overhead Press",
-      "sets": 3,
+      "exerciseId": "squat_backoff",
+      "name": "Squat (Back-off Set)",
+      "sets": 1,
+      "targetReps": 8,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
+    },
+    {
+      "exerciseId": "squat_light",
+      "name": "Squat (Light Day)",
+      "sets": 2,
       "targetReps": 5,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
+    },
+    {
+      "exerciseId": "press",
+      "name": "Overhead Press (Light)",
+      "sets": 3,
+      "targetReps": 8,
       "increment": {
         "lb": 2.5,
         "kg": 1.25
@@ -61,11 +81,11 @@
     {
       "exerciseId": "bench",
       "name": "Bench Press",
-      "sets": 3,
+      "sets": 1,
       "targetReps": 5,
       "increment": {
-        "lb": 2.5,
-        "kg": 1.25
+        "lb": 5,
+        "kg": 2.5
       },
       "references": [
         {
@@ -76,11 +96,20 @@
       ]
     },
     {
+      "exerciseId": "bench_backoff",
+      "name": "Bench Press (Back-off Set)",
+      "sets": 1,
+      "targetReps": 8,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
+    },
+    {
       "exerciseId": "chinup",
       "name": "Chin-ups",
       "sets": 3,
-      "targetReps": 5,
-      "bodyweight": true,
+      "targetReps": 8,
       "increment": {
         "lb": 0,
         "kg": 0
@@ -89,24 +118,50 @@
   ],
   "workouts": [
     {
-      "name": "Workout A",
+      "name": "Day 1",
       "exerciseRefs": [
         "squat",
+        {
+          "exerciseId": "squat_backoff",
+          "tier": "light",
+          "derived": {
+            "sourceScope": "sameSessionTopSet",
+            "pct": 90,
+            "sourceExerciseId": "squat"
+          }
+        },
         "press",
         "deadlift"
       ]
     },
     {
-      "name": "Workout B",
+      "name": "Day 2",
       "exerciseRefs": [
-        "squat",
+        {
+          "exerciseId": "squat_light",
+          "tier": "light",
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 80,
+            "sourceExerciseId": "squat"
+          }
+        },
         "bench",
+        {
+          "exerciseId": "bench_backoff",
+          "tier": "light",
+          "derived": {
+            "sourceScope": "sameSessionTopSet",
+            "pct": 90,
+            "sourceExerciseId": "bench"
+          }
+        },
         "chinup"
       ]
     }
   ],
   "rotation": [
-    "Workout A",
-    "Workout B"
+    "Day 1",
+    "Day 2"
   ]
 }

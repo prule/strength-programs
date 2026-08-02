@@ -6,13 +6,20 @@
       "name": "Starting Strength",
       "tag": "Barbell · Novice LP",
       "file": "programs/ss.json",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "horn",
-      "name": "Horn Strength",
-      "tag": "Barbell · 5×5",
+      "name": "Horn Strength (Novice)",
+      "tag": "Barbell · Novice LP",
       "file": "programs/horn.json",
+      "version": "1.1.0"
+    },
+    {
+      "id": "horn-topset",
+      "name": "Horn Strength (Top-Set/Back-off)",
+      "tag": "Barbell · Intermediate",
+      "file": "programs/horn-topset.json",
       "version": "1.0.0"
     },
     {
@@ -20,28 +27,35 @@
       "name": "Texas Method",
       "tag": "Barbell · Intermediate",
       "file": "programs/texas.json",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "bw",
       "name": "Bodyweight Basics",
       "tag": "Bodyweight · No equipment",
       "file": "programs/bw.json",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "id": "bp",
-      "name": "Barbell Prescription",
+      "name": "Barbell Prescription (Novice)",
       "tag": "Barbell · Masters (40+)",
-      "file": "programs/bp.json",
+      "file": "programs/barbell-prescription-novice.json",
+      "version": "1.1.0"
+    },
+    {
+      "id": "bp-hlm",
+      "name": "Barbell Prescription (HLM)",
+      "tag": "Barbell · Masters (40+) · HLM",
+      "file": "programs/barbell-prescription-hlm.json",
       "version": "1.0.0"
     },
     {
       "id": "sl5x5",
       "name": "StrongLifts 5x5",
       "tag": "Barbell · 5×5",
-      "file": "programs/sl5x5.json",
-      "version": "1.0.0"
+      "file": "programs/stronglifts-5x5.json",
+      "version": "1.1.0"
     }
   ]
 }

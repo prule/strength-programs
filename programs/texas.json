@@ -5,7 +5,7 @@
     {
       "exerciseId": "squat",
       "name": "Squat",
-      "sets": 5,
+      "sets": 1,
       "targetReps": 5,
       "increment": {
         "lb": 5,
@@ -22,12 +22,30 @@
           "label": "Squatting Right on Day 1",
           "url": "https://www.youtube.com/watch?v=GtKYbl2X9dY&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
         }
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 0
+      },
+      "collapse": [
+        {
+          "sets": 2,
+          "targetReps": 3
+        },
+        {
+          "sets": 3,
+          "targetReps": 2
+        },
+        {
+          "sets": 5,
+          "targetReps": 1
+        }
       ]
     },
     {
       "exerciseId": "bench",
       "name": "Bench Press",
-      "sets": 5,
+      "sets": 1,
       "targetReps": 5,
       "increment": {
         "lb": 5,
@@ -39,32 +57,23 @@
           "label": "Learning to Bench Press — The Starting Strength Method",
           "url": "https://www.youtube.com/watch?v=rxD321l2svE&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
         }
-      ]
-    },
-    {
-      "exerciseId": "row",
-      "name": "Barbell Row",
-      "sets": 5,
-      "targetReps": 5,
-      "increment": {
-        "lb": 5,
-        "kg": 2.5
-      }
-    },
-    {
-      "exerciseId": "press",
-      "name": "Overhead Press",
-      "sets": 1,
-      "targetReps": 5,
-      "increment": {
-        "lb": 5,
-        "kg": 2.5
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 0
       },
-      "references": [
+      "collapse": [
         {
-          "kind": "video",
-          "label": "Learning to Press — The Starting Strength Method",
-          "url": "https://www.youtube.com/watch?v=8dacy5hjaE8&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+          "sets": 2,
+          "targetReps": 3
+        },
+        {
+          "sets": 3,
+          "targetReps": 2
+        },
+        {
+          "sets": 5,
+          "targetReps": 1
         }
       ]
     },
@@ -84,28 +93,93 @@
           "url": "https://www.youtube.com/watch?v=p2OPUi4xGrM&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
         }
       ]
+    },
+    {
+      "exerciseId": "power-clean",
+      "name": "Power Clean",
+      "sets": 5,
+      "targetReps": 3,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
+    },
+    {
+      "exerciseId": "chinup",
+      "name": "Chin-ups",
+      "sets": 3,
+      "targetReps": 8,
+      "increment": {
+        "lb": 0,
+        "kg": 0
+      }
     }
   ],
   "workouts": [
     {
       "name": "Volume Day",
       "exerciseRefs": [
-        "squat",
-        "bench",
-        "row"
+        {
+          "exerciseId": "squat",
+          "tier": "medium",
+          "sets": 5,
+          "targetReps": 5,
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 90
+          }
+        },
+        {
+          "exerciseId": "bench",
+          "tier": "medium",
+          "sets": 5,
+          "targetReps": 5,
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 90
+          }
+        },
+        "deadlift"
+      ]
+    },
+    {
+      "name": "Recovery Day",
+      "exerciseRefs": [
+        {
+          "exerciseId": "squat",
+          "tier": "light",
+          "sets": 2,
+          "targetReps": 5,
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 75
+          }
+        },
+        {
+          "exerciseId": "bench",
+          "tier": "light",
+          "sets": 3,
+          "targetReps": 5,
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 75
+          }
+        },
+        "chinup"
       ]
     },
     {
       "name": "Intensity Day",
       "exerciseRefs": [
         "squat",
-        "press",
-        "deadlift"
+        "bench",
+        "power-clean"
       ]
     }
   ],
   "rotation": [
     "Volume Day",
+    "Recovery Day",
     "Intensity Day"
   ]
 }

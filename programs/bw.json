@@ -7,66 +7,66 @@
       "name": "Push-ups",
       "sets": 3,
       "targetReps": 12,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     },
     {
       "exerciseId": "dip",
       "name": "Dips",
       "sets": 3,
       "targetReps": 10,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     },
     {
       "exerciseId": "pike-pushup",
       "name": "Pike Push-ups",
       "sets": 3,
       "targetReps": 8,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     },
     {
       "exerciseId": "pullup",
       "name": "Pull-ups",
       "sets": 3,
       "targetReps": 8,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     },
     {
       "exerciseId": "inverted-row",
       "name": "Inverted Rows",
       "sets": 3,
       "targetReps": 10,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     },
     {
       "exerciseId": "chinup",
       "name": "Chin-ups",
       "sets": 3,
       "targetReps": 6,
-      "bodyweight": true,
       "increment": {
         "lb": 0,
         "kg": 0
-      }
+      },
+      "amount": "reps"
     }
   ],
   "workouts": [

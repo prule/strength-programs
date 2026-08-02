@@ -17,6 +17,25 @@
           "label": "StrongLifts Squat guide",
           "url": "https://stronglifts.com/squat/"
         }
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 10,
+        "collapseAfterResets": 3
+      },
+      "collapse": [
+        {
+          "sets": 3,
+          "targetReps": 5
+        },
+        {
+          "sets": 3,
+          "targetReps": 3
+        },
+        {
+          "sets": 1,
+          "targetReps": 3
+        }
       ]
     },
     {
@@ -33,6 +52,25 @@
           "kind": "article",
           "label": "StrongLifts Bench Press guide",
           "url": "https://stronglifts.com/bench-press/"
+        }
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 10,
+        "collapseAfterResets": 3
+      },
+      "collapse": [
+        {
+          "sets": 3,
+          "targetReps": 5
+        },
+        {
+          "sets": 3,
+          "targetReps": 3
+        },
+        {
+          "sets": 1,
+          "targetReps": 3
         }
       ]
     },
@@ -51,6 +89,25 @@
           "label": "StrongLifts Barbell Row guide",
           "url": "https://stronglifts.com/barbell-row/"
         }
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 10,
+        "collapseAfterResets": 3
+      },
+      "collapse": [
+        {
+          "sets": 3,
+          "targetReps": 5
+        },
+        {
+          "sets": 3,
+          "targetReps": 3
+        },
+        {
+          "sets": 1,
+          "targetReps": 3
+        }
       ]
     },
     {
@@ -67,6 +124,25 @@
           "kind": "article",
           "label": "StrongLifts Overhead Press guide",
           "url": "https://stronglifts.com/overhead-press/"
+        }
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 10,
+        "collapseAfterResets": 3
+      },
+      "collapse": [
+        {
+          "sets": 3,
+          "targetReps": 5
+        },
+        {
+          "sets": 3,
+          "targetReps": 3
+        },
+        {
+          "sets": 1,
+          "targetReps": 3
         }
       ]
     },
@@ -85,7 +161,11 @@
           "label": "StrongLifts Deadlift guide",
           "url": "https://stronglifts.com/deadlift/"
         }
-      ]
+      ],
+      "reset": {
+        "afterMisses": 3,
+        "reducePct": 10
+      }
     }
   ],
   "workouts": [

@@ -1,6 +1,6 @@
 {
-  "name": "Horn Strength (Novice)",
-  "tag": "Barbell · Novice LP",
+  "name": "Barbell Prescription (HLM)",
+  "tag": "Barbell · Masters (40+) · HLM",
   "exercises": [
     {
       "exerciseId": "squat",
@@ -30,14 +30,31 @@
       "sets": 3,
       "targetReps": 5,
       "increment": {
-        "lb": 5,
-        "kg": 2.5
+        "lb": 2.5,
+        "kg": 1.25
       },
       "references": [
         {
           "kind": "video",
           "label": "Learning to Press — The Starting Strength Method",
           "url": "https://www.youtube.com/watch?v=8dacy5hjaE8&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
+        }
+      ]
+    },
+    {
+      "exerciseId": "bench",
+      "name": "Bench Press",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": {
+        "lb": 2.5,
+        "kg": 1.25
+      },
+      "references": [
+        {
+          "kind": "video",
+          "label": "Learning to Bench Press — The Starting Strength Method",
+          "url": "https://www.youtube.com/watch?v=rxD321l2svE&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
         }
       ]
     },
@@ -59,36 +76,29 @@
       ]
     },
     {
-      "exerciseId": "bench",
-      "name": "Bench Press",
-      "sets": 3,
-      "targetReps": 5,
-      "increment": {
-        "lb": 5,
-        "kg": 2.5
-      },
-      "references": [
-        {
-          "kind": "video",
-          "label": "Learning to Bench Press — The Starting Strength Method",
-          "url": "https://www.youtube.com/watch?v=rxD321l2svE&list=PLbRFzuzcwrdDmJfvMzY67SsoaNVUiY33s"
-        }
-      ]
-    },
-    {
       "exerciseId": "chinup",
-      "name": "Chin-ups",
+      "name": "Chin-ups (Light Pull)",
       "sets": 3,
       "targetReps": 8,
       "increment": {
         "lb": 0,
         "kg": 0
       }
+    },
+    {
+      "exerciseId": "rdl",
+      "name": "Romanian Deadlift (Medium Pull)",
+      "sets": 3,
+      "targetReps": 5,
+      "increment": {
+        "lb": 5,
+        "kg": 2.5
+      }
     }
   ],
   "workouts": [
     {
-      "name": "Workout A",
+      "name": "Heavy Day",
       "exerciseRefs": [
         "squat",
         "press",
@@ -96,16 +106,46 @@
       ]
     },
     {
-      "name": "Workout B",
+      "name": "Light Day",
       "exerciseRefs": [
-        "squat",
+        {
+          "exerciseId": "squat",
+          "tier": "light",
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 80
+          }
+        },
         "bench",
         "chinup"
+      ]
+    },
+    {
+      "name": "Medium Day",
+      "exerciseRefs": [
+        {
+          "exerciseId": "squat",
+          "tier": "medium",
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 90
+          }
+        },
+        {
+          "exerciseId": "press",
+          "tier": "medium",
+          "derived": {
+            "sourceScope": "lastHeavySession",
+            "pct": 90
+          }
+        },
+        "rdl"
       ]
     }
   ],
   "rotation": [
-    "Workout A",
-    "Workout B"
+    "Heavy Day",
+    "Light Day",
+    "Medium Day"
   ]
 }
